@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+  color: #4CAF50;
+}
+
+.score-board {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.player-color {
+  color: #00FF00;
+  font-weight: bold;
+}
+
+.computer-color {
+  color: #0088FF;
+  font-weight: bold;
+}
+
+.score-display {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+canvas {
+  border: 2px solid #666;
+  border-radius: 4px;
+  background-color: #000;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.game-over {
+  text-align: center;
+  color: #ff0000;
+}
+
+.game-over h2 {
+  margin: 0;
+  color: #ff4444;
+}
+
+.game-over p {
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.controls-guide {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+
+kbd {
+  background-color: #333;
+  border-radius: 3px;
+  border: 1px solid #00ff00;
+  box-shadow: 0 2px 4px rgba(0, 255, 0, 0.2);
+  color: #00ff00;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0 3px;
+  padding: 3px 6px;
+  text-shadow: 0 0 2px rgba(0, 255, 0, 0.3);
+}
+
+#paused-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  cursor: pointer;
+}
+
+#paused-modal {
+  background-color: #222;
+  padding: 20px 40px;
+  border-radius: 8px;
+  border: 2px solid #00ff00;
+  text-align: center;
+  color: white;
+}
+
+#paused-modal h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #00ff00;
+}
+
+.click-dir {
+  font-size: 14px;
+  color: #aaa;
+}
